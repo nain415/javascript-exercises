@@ -1,7 +1,7 @@
 const removeFromArray = function(arr) {
     filterValues = Array.prototype.slice.call(arguments,1);
 
-    arr = arr.filter(val => !(val in filterValues));
+    arr = arr.filter(val => !(filterValues.includes(val)));
     return arr;
 
 };
