@@ -1,9 +1,17 @@
 const ftoc = function(fahr) {
-  return ((fahr - 32)*(5/9)).toFixed(1);
+  let convertedNum = ((fahr - 32)*(5/9)).toFixed(1);
+
+  if (convertedNum === Math.floor(convertedNum)) return parseInt(convertedNum);
+  else return convertedNum;
+
 };
 
 const ctof = function(cel) {
-  return ((9/5)*cel + 32).toFixed(1);
+  let convertedNum = ((9/5)*cel + 32).toFixed(1);
+
+  if (convertedNum === Math.floor(convertedNum)) return parseInt(convertedNum);
+  else return convertedNum;
+
 };
 
 // Do not edit below this line
