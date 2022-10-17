@@ -3,7 +3,7 @@ const ftoc = function(fahr) {
 };
 
 const ctof = function(cel) {
-  return ((9/5)*fahr + 32).toFixed(1);
+  return ((9/5)*cel + 32).toFixed(1);
 };
 
 // Do not edit below this line
