@@ -7,7 +7,11 @@ const sumAll = function(int1,int2) {
         smallestInt = int2;
     };
 
-    // for (let i = biggestInt, )
+    let sum = 0;
+
+    for (let i = smallestInt; i <= biggestInt; i++) {
+        sum+=i;
+    }
 
 };
 
