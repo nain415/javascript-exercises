@@ -1,9 +1,10 @@
 const repeatString = function(str,num) {
 
     append = str;
+    output = '';
 
-    while (num > 1) {
-        str += append;
+    while (num > 0) {
+        output += append;
         num--;
     };
 
