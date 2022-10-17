@@ -1,5 +1,6 @@
 const ftoc = function(fahr) {
-  let convertedNum = Number(((fahr - 32)*(5/9)).toFixed(1));
+  let convertedNum = ((fahr - 32)*(5/9)).toFixed(1);
+  convertedNum = Number(convertedNum);
 
   if (convertedNum === Math.floor(convertedNum)) return Math.trunc(convertedNum);
   else return convertedNum;
@@ -7,7 +8,8 @@ const ftoc = function(fahr) {
 };
 
 const ctof = function(cel) {
-  let convertedNum = Number((9/5)*cel + 32).toFixed(1));
+  let convertedNum = ((9/5)*cel + 32).toFixed(1);
+  convertedNum = Number(convertedNum);
 
   if (convertedNum === Math.floor(convertedNum)) return Math.trunc(convertedNum);
   else return convertedNum;
