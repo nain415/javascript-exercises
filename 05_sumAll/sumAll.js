@@ -1,4 +1,8 @@
 const sumAll = function(int1,int2) {
+
+    if (typeof(int1) != "number" || typeof(int2) != "number") return "ERROR";
+    if (int1 < 0 || int2 < 0) return "ERROR";
+
     let smallestInt = int1;
     let biggestInt = int2;
 
@@ -11,7 +15,7 @@ const sumAll = function(int1,int2) {
 
     for (let i = smallestInt; i <= biggestInt; i++) {
         sum+=i;
-    }
+    };
 
     return sum;
 
