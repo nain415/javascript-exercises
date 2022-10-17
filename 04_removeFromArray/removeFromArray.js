@@ -1,4 +1,7 @@
 const removeFromArray = function(arr) {
+    filterValues = Array.prototype.slice.call(arguments,1);
+
+    
 
 };
 
